@@ -11,6 +11,15 @@ class _CatalogHomePageState extends State<CatalogHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Catalog App',
+          style: TextStyle(
+            color: Colors.grey,
+          ),
+        ),
+        titleTextStyle: ,
+      ),
       body: Center(
         child: Text(
           'this is my second app',
@@ -21,6 +30,7 @@ class _CatalogHomePageState extends State<CatalogHomePage> {
           ),
           ),
       ),
+      drawer: Drawer(),
     );
   }
 }
