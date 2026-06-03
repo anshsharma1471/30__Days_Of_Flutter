@@ -18,7 +18,6 @@ class _CatalogHomePageState extends State<CatalogHomePage> {
             color: Colors.grey,
           ),
         ),
-        titleTextStyle: ,
       ),
       body: Center(
         child: Text(
