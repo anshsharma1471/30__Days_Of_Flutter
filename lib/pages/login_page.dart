@@ -1,9 +1,15 @@
 import 'package:catalog_application/utils/routs.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  String name = "";
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -17,7 +23,7 @@ class LoginPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Welcome to my app',
+                'Welcome to my app $name',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 )
@@ -32,6 +38,12 @@ class LoginPage extends StatelessWidget {
                       hintText: 'Enter Username',
                       labelText: 'Username',
                     ),
+                    onChanged: (value) {
+                      name = value;
+                      setState(() {
+                        
+                      });
+                    },
                   ),
                   TextField(
                     obscureText: true, //to hide passward, it shows passward in dote form
@@ -49,8 +61,11 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
               ),
-              onPressed: () {
+              onPressed: () async {
+                await Future.delayed(Duration(seconds: 1));
+                // ignore: use_build_context_synchronously
                 Navigator.pushNamed(context, Routes.homeRoute);
+                
               },
             ),
           ],
