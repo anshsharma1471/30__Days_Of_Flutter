@@ -3,7 +3,7 @@ import 'package:catalog_application/pages/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'utils/routs.dart';
+import 'pages/utils/routs.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
        primarySwatch: Colors.deepPurple, 
       ),
-      initialRoute: "/login",
+      initialRoute: "/home",
        routes: {
         Routes.loginRoute:(context) => LoginPage(),
         Routes.homeRoute :(context) => CatalogHomePage(),

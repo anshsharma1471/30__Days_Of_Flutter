@@ -1,4 +1,4 @@
-import 'package:catalog_application/utils/routs.dart';
+import 'package:catalog_application/pages/utils/routs.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
 
   final _formKey = GlobalKey<FormState>();
 
-  moveToHome(BuildContext context) async {
+  Future<void> moveToHome(BuildContext context) async {
     setState(() {
       changeButton = true;
     });

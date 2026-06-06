@@ -1,3 +1,4 @@
+import 'package:catalog_application/pages/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class CatalogHomePage extends StatefulWidget {
@@ -29,7 +30,7 @@ class _CatalogHomePageState extends State<CatalogHomePage> {
           ),
           ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
