@@ -3,7 +3,7 @@ import 'package:catalog_application/pages/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'pages/utils/routs.dart';
+import 'utils/routs.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,6 +18,10 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(primarySwatch: Colors.deepPurple,
       fontFamily: GoogleFonts.lato().fontFamily,
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+      )
       ),
       
       darkTheme: ThemeData(

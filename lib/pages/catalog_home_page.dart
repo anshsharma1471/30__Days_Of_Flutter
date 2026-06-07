@@ -1,4 +1,4 @@
-import 'package:catalog_application/pages/widgets/drawer.dart';
+import 'package:catalog_application/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class CatalogHomePage extends StatefulWidget {
@@ -13,10 +13,13 @@ class _CatalogHomePageState extends State<CatalogHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Catalog App',
-          style: TextStyle(
-            color: Colors.grey,
+        title: Padding(
+          padding: const EdgeInsets.only(left: 50),
+          child: Text(
+            'Catalog App',
+            style: TextStyle(
+              color: Colors.black,
+            ),
           ),
         ),
       ),
