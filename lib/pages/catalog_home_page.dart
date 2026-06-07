@@ -1,7 +1,8 @@
-import 'package:catalog_application/widgets/drawer.dart';
-import 'package:flutter/material.dart';
 
-// day 11 we learn context and constrant
+import 'package:catalog_application/models/catalog.dart';
+import 'package:catalog_application/widgets/drawer.dart';
+import 'package:catalog_application/widgets/item_widget.dart';
+import 'package:flutter/material.dart';
 
 class CatalogHomePage extends StatefulWidget {
   const CatalogHomePage({super.key});
@@ -25,15 +26,13 @@ class _CatalogHomePageState extends State<CatalogHomePage> {
           ),
         ),
       ),
-      body: Center(
-        child: Text(
-          'this is my second app',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-            color: Colors.grey,
-          ),
-          ),
+      body: ListView.builder(
+        itemCount: CatalogModel.products.length,
+        itemBuilder: (context, index) {
+          return ItemWidget(
+            item: CatalogModel.products[index],
+          );
+        },
       ),
       drawer: MyDrawer(),
     );
