@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.white,
         elevation: 0.0,
-      )
+      ),
       ),
       
       darkTheme: ThemeData(

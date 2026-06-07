@@ -1,6 +1,8 @@
 import 'package:catalog_application/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
+// day 11 we learn context and constrant
+
 class CatalogHomePage extends StatefulWidget {
   const CatalogHomePage({super.key});
 
