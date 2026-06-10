@@ -5,12 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'utils/routs.dart';
 
-
-
-// we learn today local files load & decode json
-
-
-
 void main() {
   runApp(MyApp());
 }

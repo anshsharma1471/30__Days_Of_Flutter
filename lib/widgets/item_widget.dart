@@ -9,9 +9,9 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(4.0),
+      padding: const EdgeInsets.all(1.0),
       child: Card(
-        shape: StadiumBorder(),
+        // shape: StadiumBorder(),
         child: ListTile(
           leading: Image.network(item.image),
           title: Text(item.name),

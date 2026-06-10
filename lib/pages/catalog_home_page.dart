@@ -31,6 +31,7 @@ class _CatalogHomePageState extends State<CatalogHomePage> {
         itemBuilder: (context, index) {
           return ItemWidget(
             item: CatalogModel.products[index],
+            
           );
         },
       ),
